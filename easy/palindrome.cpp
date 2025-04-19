@@ -1,3 +1,4 @@
+// My solution
 class Solution {
 public:
     bool isPalindrome(int x) {
@@ -7,8 +8,8 @@ public:
         }
         vector<int> digits;
         int temp = x;
-        while(temp > 0){ // divide entre 10 y guarda el resto
-            digits.push_back(temp % 10); // divide entre 10, elimina el residuo.
+        while(temp > 0){ 
+            digits.push_back(temp % 10); // division by 10 and it keeps the last number
             temp /= 10;
         }
   
@@ -27,6 +28,7 @@ public:
     }
 };
 
+// The best solution
 class Solution {
 public:
     bool isPalindrome(int x) {
